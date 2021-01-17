@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>Hola Mundo ruin</p>
+    <header>
+        
+        <div class="divLogo">
+            <a id="inicio" class="inicio"></a>
+            <a href="#inicio" class="decorationNone enlaceHome">
+                <img class="imagenLogo" src="./img/oscarsclub-isologo.png" alt="logo">
+                <span class="negrita">oscars</span><span class="rojo">club</span>
+            </a>
+        </div>
+        <div class="divListaEnlaces">
+            <ul>
+                <li class="itemNavegacion">
+                    <a href="clubes-tematicos.html" class="decorationNone">Clubes temáticos</a>
+                </li>
+                <li class="itemNavegacion">
+                    <a href="sesiones-2020.html" class="decorationNone">Sessions 2020</a>
+                </li>
+            </ul>
+        </div>
+        <div class="divBotonera"> 
+            <input type="button" class="btnRegistrarse" value="INICIAR SESION">
+            <!-- <a class="btnIniciarSesion">Iniciar sesión</a> -->
+        </div>
+    </header>
+    <main class="w-100 main">
+        <section class="seccion1">
+            <h2 class="tituloSeccion">¿Qué es Oscars Club?</h2>
+            <p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de tener que ir a un espacio físico.</p>
+        </section>
+        <section class="seccion2">
+            <h2 class="tituloSeccion">¿Cómo funciona?</h2>
+            <div class="listaFigures">
+                <figure class="figura">
+                    <img src="./img/howto-register.png" alt="registro" class="imgFigure">
+                    <figcaption>Regístrate</figcaption>
+                </figure>
+                <figure class="figura">
+                    <img src="./img/howto-club.png" alt="club" class="imgFigure">
+                    <figcaption>Inscríbete en un club</figcaption>
+                </figure>
+                <figure class="figura">
+                    <img src="./img/howto-film.png" alt="película" class="imgFigure">
+                    <figcaption>Elige una película</figcaption>
+                </figure>
+                <figure class="figura">
+                    <img src="./img/howto-speech.png" alt="debate" class="imgFigure">
+                    <figcaption>Disfruta del debate</figcaption>
+                </figure>   
+            </div>
+        </section>
+        <section class="seccion3">
+            <h2 class="tituloSeccion">Únete al club</h2>
+            <div class="seccion3divprincipal">
+                <div>
+                    <div class="divSeccion3Subseccion1">
+                        <h3>Estamos mirando tu próxima película preferida.</h3>
+                        <h3>¿Te lo vas a perder?</h3>
+                    </div>
+                </div>
+                <div>
+                    <form class="formularioRegistro">
+                        <input type="text" name="nombre" class="form-item" value="Nombre">
+                        <input type="text" name="correo_electronico" class="form-item" value="Correo electrónico">
+                        <input type="text" name="contrasena" class="form-item" value="Contraseña">
+                        <p class="text-start">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>OSCARS CLUB</strong>. <strong>Finalidades:</strong> recogida de datos para la inscripción como socio del interesado.<strong>Legitimación:</strong> Consentimiento del interesado. <strong>Destinatarios:</strong> No están previstas cesiones de datos a terceros, salvo obligación legal. <strong>Derechos:</strong> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información Adicional:</strong> Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>.</p>
+                        <span class="text-start">
+                            <input type="checkbox" id="privacidad">
+                            <label for="privacidad">He leído y acepto la política de privacidad</label>
+                        </span>
+                        
+                        <input type="button" class="btnRegistrarse" value="REGISTRARSE">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSeccion1">
+            <ul class="footerSeccion11">
+                <li>
+                    <a class="pie" href="#">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a class="pie" href="#">Aviso legal</a>
+                </li>
+                <li>
+                    <a class="pie" href="#">Política de privacidad</a>
+                </li>
+            </ul>
+            <ul class="footerSeccion12">
+                <li>
+                    <a class="pie" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a class="pie" href="#">Twitter</a>
+                </li>
+                <li>
+                    <a class="pie" href="#">Youtube</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerSeccion2">
+            <p>&copy; 2020 José Miguel Esteban Lupiañez</p>
+            <p>Iconos<a class="pie" href="https://www.flaticon.com"> flaticon.com</a></p>
+            <p>Imágenes <a class="pie" href="https://unsplash.com"> unsplash.com</a></p>
+        </div>
+        <div class="footerSeccion3">
+            <a class="pie" href="#inicio">&xwedge;</a>
+        </div>
+    </footer>
 </body>
 </html>
